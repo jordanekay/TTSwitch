@@ -17,6 +17,12 @@
 		0D053FCF1706320A00D56ED9 /* switchToggle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D053FC71706320A00D56ED9 /* switchToggle@2x.png */; };
 		0D053FD21706344B00D56ED9 /* switchToggleHigh.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D053FD01706344B00D56ED9 /* switchToggleHigh.png */; };
 		0D053FD31706344B00D56ED9 /* switchToggleHigh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D053FD11706344B00D56ED9 /* switchToggleHigh@2x.png */; };
+		451BA79B1A9D6B540036074F /* TTFadeSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 451BA7951A9D6B540036074F /* TTFadeSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		451BA79C1A9D6B540036074F /* TTFadeSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 451BA7961A9D6B540036074F /* TTFadeSwitch.m */; };
+		451BA79D1A9D6B540036074F /* TTSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 451BA7971A9D6B540036074F /* TTSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		451BA79E1A9D6B540036074F /* TTSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 451BA7981A9D6B540036074F /* TTSwitch.m */; };
+		451BA79F1A9D6B540036074F /* TTSwitchHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 451BA7991A9D6B540036074F /* TTSwitchHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		451BA7A01A9D6B540036074F /* TTSwitchSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 451BA79A1A9D6B540036074F /* TTSwitchSubclass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D2000F61166D01EB00903E17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2000F60166D01EB00903E17 /* UIKit.framework */; };
 		D2000F63166D01EB00903E17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2000F62166D01EB00903E17 /* Foundation.framework */; };
 		D2000F65166D01EB00903E17 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2000F64166D01EB00903E17 /* CoreGraphics.framework */; };
@@ -26,10 +32,8 @@
 		D2000F8B166D021500903E17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2000F81166D021500903E17 /* InfoPlist.strings */; };
 		D2000F8C166D021500903E17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2000F83166D021500903E17 /* main.m */; };
 		D2000F8D166D021500903E17 /* TTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2000F85166D021500903E17 /* TTAppDelegate.m */; };
-		D2000F95166D052E00903E17 /* TTSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D2000F94166D052E00903E17 /* TTSwitch.m */; };
 		D2000FA9166D0BFD00903E17 /* TTDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2000FA8166D0BFD00903E17 /* TTDisplayViewController.m */; };
 		D2000FAB166D181200903E17 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2000FAA166D181200903E17 /* QuartzCore.framework */; };
-		D21F10261721E36100B7CD7D /* TTFadeSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = D21F10251721E36100B7CD7D /* TTFadeSwitch.m */; };
 		D234CC4B167FA33200B9BFE3 /* square-switch-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = D234CC43167FA33200B9BFE3 /* square-switch-mask.png */; };
 		D234CC4C167FA33200B9BFE3 /* square-switch-mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D234CC44167FA33200B9BFE3 /* square-switch-mask@2x.png */; };
 		D234CC4D167FA33200B9BFE3 /* square-switch-overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = D234CC45167FA33200B9BFE3 /* square-switch-overlay.png */; };
@@ -69,7 +73,14 @@
 		0D053FC71706320A00D56ED9 /* switchToggle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switchToggle@2x.png"; sourceTree = "<group>"; };
 		0D053FD01706344B00D56ED9 /* switchToggleHigh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchToggleHigh.png; sourceTree = "<group>"; };
 		0D053FD11706344B00D56ED9 /* switchToggleHigh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switchToggleHigh@2x.png"; sourceTree = "<group>"; };
-		D2000F5D166D01EB00903E17 /* TTSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		451BA7571A9D657A0036074F /* TTSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TTSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		451BA7951A9D6B540036074F /* TTFadeSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTFadeSwitch.h; sourceTree = "<group>"; };
+		451BA7961A9D6B540036074F /* TTFadeSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTFadeSwitch.m; sourceTree = "<group>"; };
+		451BA7971A9D6B540036074F /* TTSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSwitch.h; sourceTree = "<group>"; };
+		451BA7981A9D6B540036074F /* TTSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSwitch.m; sourceTree = "<group>"; };
+		451BA7991A9D6B540036074F /* TTSwitchHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSwitchHeader.h; sourceTree = "<group>"; };
+		451BA79A1A9D6B540036074F /* TTSwitchSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSwitchSubclass.h; sourceTree = "<group>"; };
+		D2000F5D166D01EB00903E17 /* TTSwitch-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TTSwitch-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2000F60166D01EB00903E17 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D2000F62166D01EB00903E17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2000F64166D01EB00903E17 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,14 +93,9 @@
 		D2000F85166D021500903E17 /* TTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAppDelegate.m; sourceTree = "<group>"; };
 		D2000F86166D021500903E17 /* TTSwitch-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TTSwitch-Info.plist"; sourceTree = "<group>"; };
 		D2000F87166D021500903E17 /* TTSwitch-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TTSwitch-Prefix.pch"; sourceTree = "<group>"; };
-		D2000F93166D052E00903E17 /* TTSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSwitch.h; sourceTree = "<group>"; };
-		D2000F94166D052E00903E17 /* TTSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSwitch.m; sourceTree = "<group>"; };
 		D2000FA7166D0BFD00903E17 /* TTDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDisplayViewController.h; sourceTree = "<group>"; };
 		D2000FA8166D0BFD00903E17 /* TTDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDisplayViewController.m; sourceTree = "<group>"; };
 		D2000FAA166D181200903E17 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		D21F10241721E36100B7CD7D /* TTFadeSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTFadeSwitch.h; sourceTree = "<group>"; };
-		D21F10251721E36100B7CD7D /* TTFadeSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTFadeSwitch.m; sourceTree = "<group>"; };
-		D21F10271721E6E900B7CD7D /* TTSwitchSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSwitchSubclass.h; sourceTree = "<group>"; };
 		D234CC43167FA33200B9BFE3 /* square-switch-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "square-switch-mask.png"; path = "Images/Square/square-switch-mask.png"; sourceTree = "<group>"; };
 		D234CC44167FA33200B9BFE3 /* square-switch-mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "square-switch-mask@2x.png"; path = "Images/Square/square-switch-mask@2x.png"; sourceTree = "<group>"; };
 		D234CC45167FA33200B9BFE3 /* square-switch-overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "square-switch-overlay.png"; path = "Images/Square/square-switch-overlay.png"; sourceTree = "<group>"; };
@@ -122,6 +128,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		451BA7531A9D657A0036074F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2000F5A166D01EB00903E17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,7 +180,8 @@
 		D2000F5E166D01EB00903E17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2000F5D166D01EB00903E17 /* TTSwitch.app */,
+				D2000F5D166D01EB00903E17 /* TTSwitch-Example.app */,
+				451BA7571A9D657A0036074F /* TTSwitch.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,11 +200,12 @@
 		D2000F66166D01EB00903E17 /* TTSwitch */ = {
 			isa = PBXGroup;
 			children = (
-				D2000F93166D052E00903E17 /* TTSwitch.h */,
-				D2000F94166D052E00903E17 /* TTSwitch.m */,
-				D21F10241721E36100B7CD7D /* TTFadeSwitch.h */,
-				D21F10251721E36100B7CD7D /* TTFadeSwitch.m */,
-				D21F10271721E6E900B7CD7D /* TTSwitchSubclass.h */,
+				451BA7951A9D6B540036074F /* TTFadeSwitch.h */,
+				451BA7961A9D6B540036074F /* TTFadeSwitch.m */,
+				451BA7971A9D6B540036074F /* TTSwitch.h */,
+				451BA7981A9D6B540036074F /* TTSwitch.m */,
+				451BA7991A9D6B540036074F /* TTSwitchHeader.h */,
+				451BA79A1A9D6B540036074F /* TTSwitchSubclass.h */,
 			);
 			path = TTSwitch;
 			sourceTree = "<group>";
@@ -278,10 +293,42 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		451BA7541A9D657A0036074F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				451BA79F1A9D6B540036074F /* TTSwitchHeader.h in Headers */,
+				451BA79D1A9D6B540036074F /* TTSwitch.h in Headers */,
+				451BA7A01A9D6B540036074F /* TTSwitchSubclass.h in Headers */,
+				451BA79B1A9D6B540036074F /* TTFadeSwitch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		D2000F5C166D01EB00903E17 /* TTSwitch */ = {
+		451BA7561A9D657A0036074F /* TTSwitch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2000F7A166D01EB00903E17 /* Build configuration list for PBXNativeTarget "TTSwitch" */;
+			buildConfigurationList = 451BA7701A9D657A0036074F /* Build configuration list for PBXNativeTarget "TTSwitch" */;
+			buildPhases = (
+				451BA7521A9D657A0036074F /* Sources */,
+				451BA7531A9D657A0036074F /* Frameworks */,
+				451BA7541A9D657A0036074F /* Headers */,
+				451BA7551A9D657A0036074F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTSwitch;
+			productName = TTSwitchFramework;
+			productReference = 451BA7571A9D657A0036074F /* TTSwitch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D2000F5C166D01EB00903E17 /* TTSwitch-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2000F7A166D01EB00903E17 /* Build configuration list for PBXNativeTarget "TTSwitch-Example" */;
 			buildPhases = (
 				D2000F59166D01EB00903E17 /* Sources */,
 				D2000F5A166D01EB00903E17 /* Frameworks */,
@@ -291,9 +338,9 @@
 			);
 			dependencies = (
 			);
-			name = TTSwitch;
+			name = "TTSwitch-Example";
 			productName = TTSwitch;
-			productReference = D2000F5D166D01EB00903E17 /* TTSwitch.app */;
+			productReference = D2000F5D166D01EB00903E17 /* TTSwitch-Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -305,6 +352,11 @@
 				CLASSPREFIX = TT;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Two Toasters";
+				TargetAttributes = {
+					451BA7561A9D657A0036074F = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
 			};
 			buildConfigurationList = D2000F58166D01EB00903E17 /* Build configuration list for PBXProject "TTSwitch" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -318,12 +370,20 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2000F5C166D01EB00903E17 /* TTSwitch */,
+				D2000F5C166D01EB00903E17 /* TTSwitch-Example */,
+				451BA7561A9D657A0036074F /* TTSwitch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		451BA7551A9D657A0036074F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2000F5B166D01EB00903E17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,18 +431,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		451BA7521A9D657A0036074F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				451BA79C1A9D6B540036074F /* TTFadeSwitch.m in Sources */,
+				451BA79E1A9D6B540036074F /* TTSwitch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2000F59166D01EB00903E17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D2000F8C166D021500903E17 /* main.m in Sources */,
 				D2000F8D166D021500903E17 /* TTAppDelegate.m in Sources */,
-				D2000F95166D052E00903E17 /* TTSwitch.m in Sources */,
 				D2000FA9166D0BFD00903E17 /* TTDisplayViewController.m in Sources */,
 				D28499D4166FB9ED0058CE20 /* TTControlItem.m in Sources */,
 				D28499D7166FBA2D0058CE20 /* TTControlCell.m in Sources */,
 				D2C8DB2E169F1A06002A389D /* TTXibViewController.m in Sources */,
-				D21F10261721E36100B7CD7D /* TTFadeSwitch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +467,77 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		451BA7711A9D657A0036074F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = TTSwitch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		451BA7721A9D657A0036074F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = TTSwitch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D2000F78166D01EB00903E17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -425,7 +563,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -449,7 +587,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -464,6 +602,7 @@
 				GCC_WARN_SHADOW = YES;
 				INFOPLIST_FILE = "TTSwitch-Example/TTSwitch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -477,6 +616,7 @@
 				GCC_WARN_SHADOW = YES;
 				INFOPLIST_FILE = "TTSwitch-Example/TTSwitch-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -485,6 +625,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		451BA7701A9D657A0036074F /* Build configuration list for PBXNativeTarget "TTSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451BA7711A9D657A0036074F /* Debug */,
+				451BA7721A9D657A0036074F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D2000F58166D01EB00903E17 /* Build configuration list for PBXProject "TTSwitch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -494,7 +643,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2000F7A166D01EB00903E17 /* Build configuration list for PBXNativeTarget "TTSwitch" */ = {
+		D2000F7A166D01EB00903E17 /* Build configuration list for PBXNativeTarget "TTSwitch-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2000F7B166D01EB00903E17 /* Debug */,
